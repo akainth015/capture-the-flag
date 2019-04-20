@@ -1,0 +1,16 @@
+extends layout
+
+block styles
+    // Maintenance credentials: [maintainers, detestable-elbow-shark]
+    link(rel="stylesheet", href="/stylesheets/login.css")
+
+block content
+    form(action="/authenticate", method="post")
+        div#hero
+            img(src="/images/padlock.png")
+            h1 Login to #[br] #{organization}
+        label Username
+            input(name="username")
+        label Password
+            input(name="password", type="password")
+        button.call-to-action(type="submit") Log in

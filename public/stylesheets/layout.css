@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #EFEFEF;
+    margin: 0;
+}
+
+button, .button {
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+button:hover, .button:hover {
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+}
+
+button.call-to-action, .button.call-to-action {
+    background-color: dodgerblue;
+    border: thin solid transparent;
+    color: white;
+}
+
+button.call-to-action:hover, .button.call-to-action:hover {
+    background-color: #2371d3;
+    border: thin solid white;
+}
+
+input, button, .button {
+    border: thin solid lightgray;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 16px;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+input:hover {
+    border: thin solid gray;
+}
+
+input:focus {
+    border: 1px solid dodgerblue;
+}
+
+pre {
+    background-color: #EEEEEE;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: monospace;
+    padding: 16px;
+    width: 100%;
+}

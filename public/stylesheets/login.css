@@ -1,0 +1,25 @@
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: white;
+    border: thin solid lightgray;
+    padding: 32px;
+    max-width: 400px;
+}
+
+form #hero {
+    text-align: center;
+}
+
+form #hero img {
+    width: 128px;
+}
+
+form input, form button {
+    width: 100%;
+}

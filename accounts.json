@@ -1,0 +1,13 @@
+[{
+  "password": "",
+  "role": "standard",
+  "username": "lhswebdev"
+}, {
+  "password": "detestable-elbow-shark",
+  "role": "maintainer",
+  "username": "maintainers"
+}, {
+  "password": "admin",
+  "role": "admin",
+  "username": "admin"
+}]
