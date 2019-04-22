@@ -1,0 +1,12 @@
+extends ../layout
+
+block styles
+    link(rel="stylesheet", href="/stylesheets/portals/layout.css")
+    block widget-styles
+
+block content
+    #dashboard
+        #account-summary.widget
+            h2 Hello, #{session.account.username}
+            a(href="/log-out").button Log out of my account
+        block widgets

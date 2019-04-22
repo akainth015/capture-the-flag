@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Chart.bundle" level="application" />
+    <orderEntry type="library" name="2d401899cd" level="application" />
   </component>
 </module>

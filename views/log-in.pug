@@ -2,15 +2,18 @@ extends layout
 
 block styles
     // Maintenance credentials: [maintainers, detestable-elbow-shark]
-    link(rel="stylesheet", href="/stylesheets/login.css")
+    link(rel="stylesheet", href="/stylesheets/log-in.css")
 
 block content
-    form(action="/authenticate", method="post")
+    form(method="POST")
         div#hero
             img(src="/images/padlock.png")
             h1 Login to #[br] #{organization}
+        if wrongCredentials
+            p#error Wrong credentials!
         label Username
             input(name="username")
         label Password
             input(name="password", type="password")
+        input(type="hidden", name="continue", value=continueTo || "/")
         button.call-to-action(type="submit") Log in

@@ -1,0 +1,12 @@
+#balance-history {
+    grid-column: 2 / span 2;
+}
+
+#transaction-history {
+    grid-column: 1 / span 3;
+}
+
+#transaction-history h2 {
+    color: red;
+    display: none;
+}

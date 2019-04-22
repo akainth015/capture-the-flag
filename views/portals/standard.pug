@@ -1,0 +1,18 @@
+extends layout
+
+block widget-styles
+    link(rel="stylesheet", href="/stylesheets/portals/standard.css")
+
+block widgets
+    .widget#balance-history
+        canvas
+    .widget#credit-card
+        h2 Credit card usage
+        canvas
+    .widget#transaction-history
+        button.call-to-action Check my transaction history
+        h2(title="This is part of the capture-the-flag, it is intentional. Check your console.") Sorry, we couldn't get your transaction history. Try again later.
+
+block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js")
+    script(src="/javascripts/portals/standard.js")

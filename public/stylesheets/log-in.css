@@ -20,6 +20,10 @@ form #hero img {
     width: 128px;
 }
 
+form #error {
+    color: red;
+}
+
 form input, form button {
     width: 100%;
 }

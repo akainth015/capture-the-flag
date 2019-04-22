@@ -7,11 +7,7 @@ const app = require('../app');
 const debug = require('debug')('capture-the-flag:server');
 const http = require('http');
 
-/**
- * Get port from environment and store in Express.
- */
-const port = normalizePort(process.env.PORT || process.env.npm_package_config_port);
-app.set('port', port);
+app.set('port', normalizePort(process.env.PORT || process.env.npm_package_config_port));
 
 /**
  * Create HTTP server.
@@ -22,7 +18,7 @@ const server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(app.get('port'));
 server.on('error', onError);
 server.on('listening', onListening);
 
@@ -36,14 +32,10 @@ function normalizePort(val) {
     if (isNaN(port)) {
         // named pipe
         return val;
-    }
-
-    if (port >= 0) {
+    } else if (port >= 0) {
         // port number
         return port;
-    }
-
-    return false;
+    } else return false;
 }
 
 /**
@@ -55,6 +47,7 @@ function onError(error) {
         throw error;
     }
 
+    const port = app.get('port');
     const bind = typeof port === 'string'
         ? 'Pipe ' + port
         : 'Port ' + port;

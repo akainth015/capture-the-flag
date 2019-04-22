@@ -18,6 +18,7 @@ button, .button {
     cursor: pointer;
     font-size: small;
     font-weight: bold;
+    margin: 8px;
     text-decoration: none;
     text-transform: uppercase;
 }
