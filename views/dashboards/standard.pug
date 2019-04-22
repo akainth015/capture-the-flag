@@ -18,12 +18,18 @@ block widgets
     #crash-widget.text.widget
         button(onclick="toggle_visibility('stack-trace')").call-to-action Check my transaction history
         pre#stack-trace(style="display: none;")
+            | ERR! Please try running this command again as root/Administrator.
             | Error: ./accounts.json is too large to process - processing stopped by performance monitor
             |     at verifyAccountExists (routes/index.js)
             |     at routes/index.js
             |     at IncomingRequest.handle (express/index.js)
             |     [10 more lines in STDOUT]
-
+    #finances.text.widget
+        h2 Recent Payments
+        p
+            |You spent $1 on Caesar Cipher Salad
+            |Confirmation code: JOTQFDU
+        
 
 block scripts
     script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js")
