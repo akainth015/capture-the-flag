@@ -5,8 +5,8 @@ block widgets
         h2 Maintenance dashboard
         p [admin] Warning! Some users have been unable to access their transaction history.
     #file-fetch-widget.text.widget
-        h2 Logs viewer
-        p Enter the path to a log below to view its contents
+        h2 File Viewer
+        p Enter the path to the file
         form(action="/", method="POST")
             input(name="filepath", placeholder="File path")
             button(type="submit") View contents
