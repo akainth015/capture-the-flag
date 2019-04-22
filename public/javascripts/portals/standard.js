@@ -31,12 +31,8 @@ new Chart(document.querySelector("#credit-card canvas"), {
     type: "pie"
 });
 
-document.querySelector("#transaction-history button").addEventListener("click", e => {
-    e.target.style.display = "none";
-    document.querySelector("#transaction-history h2").style.display = "block";
-    const fakeServerError = new Error();
-    fakeServerError.message = "Failed to open 'accounts.json' for reading";
-    fakeServerError.name = "EACCES";
-    fakeServerError.description = "This service does not have permission to read 'accounts.json'";
-    console.error(fakeServerError);
-});
+const fakeServerError = new Error();
+fakeServerError.message = "Failed to open 'accounts.json' for reading";
+fakeServerError.name = "EACCES";
+fakeServerError.description = "This service does not have permission to read 'accounts.json'";
+console.error(fakeServerError);

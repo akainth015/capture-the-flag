@@ -3,10 +3,14 @@
 }
 
 #transaction-history {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
 }
 
-#transaction-history h2 {
-    color: red;
-    display: none;
+#transaction-history .transaction {
+    align-items: center;
+    display: flex;
+}
+
+#transaction-history .transaction h3 {
+    flex-grow: 1;
 }
