@@ -7,7 +7,7 @@
   "role": "maintainer",
   "username": "maintainers"
 }, {
-  "password": "benjo",
-  "role": "1",
-  "username": "benjo"
+  "password": "admin",
+  "role": "admin",
+  "username": "admin"
 }]
