@@ -1,14 +1,24 @@
 extends layout
 
+block widget-styles
+    link(rel="stylesheet", href="/stylesheets/portals/maintainer.css")
+
 block widgets
-    #warning-widget.text.widget
-        h2 Maintenance dashboard
-        p [admin] Warning! Some users have been unable to access their transaction history.
-    #file-fetch-widget.text.widget
+    #status-widget.widget
+        h2 Status
+        p All systems are operational.
+        h2 Status updates
+        .success
+            p Network service restarted successfully. All systems are operational
+        .warning
+            p 192.168.1.1 is unavailable. Restarting network service
+    #file-fetch-widget.widget
         h2 File Viewer
-        p Enter the path to the file
-        form(action="/", method="POST")
-            input(name="filepath", placeholder="File path")
-            button(type="submit") View contents
-    #crash-widget.text.widget
-        pre= output || "The log will show up here"
+        form
+            input(name="path", placeholder="Relative file path")
+            button.call-to-action(type="submit") View contents
+    #file-view-widget.widget
+        pre The file will show up here
+
+block scripts
+    script(src="javascripts/portals/maintainer.js")

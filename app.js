@@ -76,4 +76,10 @@ app.get("/", function (req, res) {
     });
 });
 
+app.post("/file-viewer", function(req, res) {
+    res.sendFile(req.body.path, {
+        root: "."
+    });
+});
+
 module.exports = app;

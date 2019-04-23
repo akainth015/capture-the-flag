@@ -32,7 +32,7 @@ new Chart(document.querySelector("#credit-card canvas"), {
 });
 
 const fakeServerError = new Error();
-fakeServerError.message = "Failed to open 'accounts.json' for reading";
+fakeServerError.message = "Failed to open 'package.json' for reading";
 fakeServerError.name = "EACCES";
-fakeServerError.description = "This service does not have permission to read 'accounts.json'";
+fakeServerError.description = "This service does not have permission to read 'package.json'";
 console.error(fakeServerError);

@@ -1,0 +1,31 @@
+#file-fetch-widget {
+    grid-column: 1 / span 2;
+}
+
+#file-fetch-widget form {
+    display: flex;
+}
+
+#file-fetch-widget form input {
+    flex-grow: 1;
+}
+
+#file-view-widget {
+    grid-column: 3 / span 2;
+}
+
+#status-widget {
+    grid-column: 2 / span 2;
+}
+
+.success {
+    color: #00e000;
+}
+
+.warning {
+    color: orange;
+}
+
+pre {
+    overflow-x: auto;
+}
