@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const uuidv4 = require('uuid/v4');
+const {v4: uuidv4} = require("uuid");
 
 const {config} = require('./package');
 
